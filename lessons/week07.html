@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>第 7 週・讓 AI 看懂你的世界｜我的 AI 學習筆記</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC:wght@400;700&family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-week="07">
+<div class="wrap">
+  <nav class="site-nav"><a href="../index.html">← 我的 AI 學習筆記</a></nav>
+
+  <header class="lesson-head">
+    <div class="eyebrow">Week 07</div>
+    <h1>讓 AI 看懂你的世界</h1>
+    <time datetime="2026-11-02">2026-11-02</time>
+  </header>
+
+  <main class="lesson">
+    <section class="key-point">
+      <h2>✏️ 一句話重點</h2>
+      <p><span>RAG：先找出跟問題最相關的資料，再連同問題一起交給 LLM 回答。</span></p>
+    </section>
+
+    <section class="concepts">
+      <h2>💡 核心概念</h2>
+      <div class="grid">
+      <article class="concept">
+        <h3>Embedding</h3>
+        <p>把一段文字變成一個向量，意思越接近的文字，向量就越接近。</p>
+      </article>
+      <article class="concept">
+        <h3>文字塊與 metadata</h3>
+        <p>文件切成一塊一塊，並記下來源、章節等附加資訊，方便標出處。</p>
+      </article>
+      <article class="concept">
+        <h3>檢索 + 生成</h3>
+        <p>問題也轉成向量，找出最接近的文字塊，放進 prompt：「請根據這些資訊回答問題」。</p>
+      </article>
+      <article class="concept">
+        <h3>一定要 RAG 嗎？</h3>
+        <p>資料不多時也可以全部塞進 prompt（CAG），RAG 適合資料量大的情況。</p>
+      </article>
+      </div>
+    </section>
+
+    <section class="homework">
+      <h2>🛠️ 我的作業</h2>
+    <p>做了「問齊天大聖」：用《西遊記》第 1–14 回當知識庫，讓孫悟空自稱「俺老孫」回答自己的故事，並標出出自第幾回。</p>
+    <p>測試問「你喜歡吃珍珠奶茶嗎？」，它會承認記不得，不會亂編，這就是 RAG 降低幻覺的效果。</p>
+    </section>
+
+    <section class="pitfalls">
+      <h2>🕳️ 踩過的坑</h2>
+      <ul>
+      <li>原本想用的券商研究報告禁止轉載，不能做成公開的 zip，改用公有領域的西遊記。</li>
+      <li>舊的 Gemini 模型已經下架，改成讓程式自動找目前可用的模型。</li>
+      </ul>
+    </section>
+
+    <section class="reflection">
+      <h2>🌱 一句心得</h2>
+      <p>RAG 讓 AI 從「什麼都敢講」變成「有根據才講」。</p>
+    </section>
+  </main>
+
+  <nav class="pager" id="pager" aria-label="上一週與下一週"></nav>
+</div>
+<script src="../data/lessons.js"></script>
+<script src="../assets/site.js"></script>
+</body>
+</html>

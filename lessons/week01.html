@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>第 1 週・如何不焦慮地學 AI｜我的 AI 學習筆記</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC:wght@400;700&family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-week="01">
+<div class="wrap">
+  <nav class="site-nav"><a href="../index.html">← 我的 AI 學習筆記</a></nav>
+
+  <header class="lesson-head">
+    <div class="eyebrow">Week 01</div>
+    <h1>如何不焦慮地學 AI</h1>
+    <time datetime="2026-09-21">2026-09-21</time>
+  </header>
+
+  <main class="lesson">
+    <section class="key-point">
+      <h2>✏️ 一句話重點</h2>
+      <p><span>Colab 就是雲端版的 Jupyter Notebook，打開瀏覽器就能寫 Python。</span></p>
+    </section>
+
+    <section class="concepts">
+      <h2>💡 核心概念</h2>
+      <div class="grid">
+      <article class="concept">
+        <h3>Colab</h3>
+        <p>Google 的雲端運算筆記本，不用在自己電腦裝環境，程式和說明文字可以寫在同一份檔案裡。</p>
+      </article>
+      <article class="concept">
+        <h3>固定四行套件</h3>
+        <p>每份作業開頭都要有：<code>%matplotlib inline</code>、numpy、pandas、matplotlib.pyplot。</p>
+      </article>
+      <article class="concept">
+        <h3>plt.plot(X, Y)</h3>
+        <p>畫圖王牌指令：給 x 座標和 y 座標的清單，就會把點連成線。</p>
+      </article>
+      <article class="concept">
+        <h3>Markdown</h3>
+        <p>在文字格裡可以打標題、條列、超連結，還支援 LaTeX 數學式。</p>
+      </article>
+      <article class="concept">
+        <h3>interact</h3>
+        <p>寫好一個函式，用 <code>interact</code> 就能變出滑桿，即時調整參數。</p>
+      </article>
+      </div>
+    </section>
+
+    <section class="homework">
+      <h2>🛠️ 我的作業</h2>
+    <p>畫了「蝴蝶曲線」這個參數方程式，用 <code>plt.scatter</code> 讓顏色隨參數 t 漸層變化，像夜空中發光的蝴蝶。</p>
+    <p>另外用課堂教的 <code>interact</code> 做了可以調整翅膀參數的互動蝴蝶，還加碼畫了愛心曲線。</p>
+    </section>
+
+    <section class="pitfalls">
+      <h2>🕳️ 踩過的坑</h2>
+      <ul>
+      <li>老師的固定四行套件順序要照抄，沒放會扣分。</li>
+      </ul>
+    </section>
+
+    <section class="reflection">
+      <h2>🌱 一句心得</h2>
+      <p>原來只用三角函數和指數函數，就能畫出蝴蝶和愛心。</p>
+    </section>
+  </main>
+
+  <nav class="pager" id="pager" aria-label="上一週與下一週"></nav>
+</div>
+<script src="../data/lessons.js"></script>
+<script src="../assets/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>第 2 週・神經網路的概念｜我的 AI 學習筆記</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC:wght@400;700&family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-week="02">
+<div class="wrap">
+  <nav class="site-nav"><a href="../index.html">← 我的 AI 學習筆記</a></nav>
+
+  <header class="lesson-head">
+    <div class="eyebrow">Week 02</div>
+    <h1>神經網路的概念</h1>
+    <time datetime="2026-09-28">2026-09-28</time>
+  </header>
+
+  <main class="lesson">
+    <section class="key-point">
+      <h2>✏️ 一句話重點</h2>
+      <p><span>神經網路就是一台「函數學習機」：給它輸入和答案，它自己調權重去學。</span></p>
+    </section>
+
+    <section class="concepts">
+      <h2>💡 核心概念</h2>
+      <div class="grid">
+      <article class="concept">
+        <h3>把問題變成函數</h3>
+        <p>手寫辨識：輸入 28×28 的圖拉平成 784 維向量，輸出 10 維代表 0–9 的機率。</p>
+      </article>
+      <article class="concept">
+        <h3>One-hot encoding</h3>
+        <p>分類問題的答案寫成只有一個 1、其他都是 0 的向量。</p>
+      </article>
+      <article class="concept">
+        <h3>Dense 與 softmax</h3>
+        <p>Dense 是全連結層；最後一層用 softmax，把輸出變成加起來等於 1 的機率。</p>
+      </article>
+      <article class="concept">
+        <h3>Loss 與訓練</h3>
+        <p>訓練就是想辦法讓 loss 越來越小；batch_size 和 epochs 決定怎麼訓練。</p>
+      </article>
+      </div>
+    </section>
+
+    <section class="homework">
+      <h2>🛠️ 我的作業</h2>
+    <p>把老師的 3 層網路改成 5 層（256→128→64→32→10），並做了 9 組實驗比較 sigmoid/ReLU、SGD/Adam、Dropout、learning rate 等設定。</p>
+    <p>用 EarlyStopping 保留驗證正確率最高的權重：驗證資料最高 0.9865、測試資料 0.9820。最後用 Gradio 做手寫板實際測試。</p>
+    </section>
+
+    <section class="pitfalls">
+      <h2>🕳️ 踩過的坑</h2>
+      <ul>
+      <li>新版 TensorFlow 移除了 <code>predict_classes</code>，要改用 <code>np.argmax(model.predict(...))</code>。</li>
+      <li>手寫的圖要先反色、裁切、置中，轉成跟 MNIST 一樣的格式，模型才認得。</li>
+      </ul>
+    </section>
+
+    <section class="reflection">
+      <h2>🌱 一句心得</h2>
+      <p>訓練正確率超過 0.99、驗證卻停在 0.985，親眼看到 overfitting 長什麼樣子。</p>
+    </section>
+  </main>
+
+  <nav class="pager" id="pager" aria-label="上一週與下一週"></nav>
+</div>
+<script src="../data/lessons.js"></script>
+<script src="../assets/site.js"></script>
+</body>
+</html>

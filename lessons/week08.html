@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>第 8 週・教 AI 做事的方法｜我的 AI 學習筆記</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC:wght@400;700&family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-week="08">
+<div class="wrap">
+  <nav class="site-nav"><a href="../index.html">← 我的 AI 學習筆記</a></nav>
+
+  <header class="lesson-head">
+    <div class="eyebrow">Week 08</div>
+    <h1>教 AI 做事的方法</h1>
+    <time datetime="2026-11-09">2026-11-09</time>
+  </header>
+
+  <main class="lesson">
+    <section class="key-point">
+      <h2>✏️ 一句話重點</h2>
+      <p><span>LLM 不擅長的事，就交給工具；複雜的任務，就先拆步驟。</span></p>
+    </section>
+
+    <section class="concepts">
+      <h2>💡 核心概念</h2>
+      <div class="grid">
+      <article class="concept">
+        <h3>Reflection</h3>
+        <p>讓 AI 先寫初稿，再自己（或另一個「評論員」模型）檢查、修改。</p>
+      </article>
+      <article class="concept">
+        <h3>Tool Use</h3>
+        <p>告訴 AI 有哪些函式可用，AI 決定要呼叫哪個、帶什麼參數，結果用 JSON 回傳再生成回答。</p>
+      </article>
+      <article class="concept">
+        <h3>Planning</h3>
+        <p>面對一個任務，先拆成幾個步驟，再依計畫一步一步完成。</p>
+      </article>
+      <article class="concept">
+        <h3>JSON</h3>
+        <p>有欄位名稱的資料格式，電腦很喜歡看，工具的輸入輸出都用它。</p>
+      </article>
+      </div>
+    </section>
+
+    <section class="homework">
+      <h2>🛠️ 我的作業</h2>
+    <p>做了「期末讀書計畫師」（Planning）：輸入各科考試日期和難度，Agent 先規劃步驟、逐步執行、最後整合成讀書計畫表。</p>
+    <p>距離考試的天數交給 Python 精確計算，不讓 AI 自己猜。</p>
+    </section>
+
+    <section class="pitfalls">
+      <h2>🕳️ 踩過的坑</h2>
+      <ul>
+      <li>繳交當晚 Colab 出現「無法指派後端」，是 Google 伺服器塞車，不是程式錯誤，先交作業再補截圖。</li>
+      <li>Colab 密鑰的「筆記本存取權」開關要打開，程式才讀得到金鑰。</li>
+      </ul>
+    </section>
+
+    <section class="reflection">
+      <h2>🌱 一句心得</h2>
+      <p>把任務拆開之後，AI 的回答變得比較有條理，也比較好檢查。</p>
+    </section>
+  </main>
+
+  <nav class="pager" id="pager" aria-label="上一週與下一週"></nav>
+</div>
+<script src="../data/lessons.js"></script>
+<script src="../assets/site.js"></script>
+</body>
+</html>
